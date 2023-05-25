@@ -9,6 +9,7 @@ class BlogController < ApplicationController
     end
 
     def new
+        @blog_post = Blog.new
     end
 
     def create
