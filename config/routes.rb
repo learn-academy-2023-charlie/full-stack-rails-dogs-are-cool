@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
   root "blog#index"
-  get 'blog/:id'=> 'blog#show'
+  get '/blogs' => 'blog#index'
+  get '/blog_post/:id'=> 'blog#show', as: 'blog_post'
+
 end
