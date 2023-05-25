@@ -1,1 +1,7 @@
 <h1>Dear Diary</h1>
+
+<ul> 
+    <% @blogs.each do |blog_post|%> 
+    <li> <%= link_to blog_post.title, "blog_post/#{blog_post.id}" %> </li>
+    <% end %>
+</ul>
